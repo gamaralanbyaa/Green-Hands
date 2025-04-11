@@ -83,7 +83,7 @@ nav ul li a {
 }
 nav ul li a:hover { color: var(--light);}
 main{
-    margin: 80px;
+    margin: auto;
     Min-height: calc(100vh – 160px);
 }
 .Donate{
