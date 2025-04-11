@@ -45,7 +45,7 @@ h1{
 .box:hover{
     background-color: rgb(13, 20, 11);
     font-size: 20px;
-    transform: scale(1.1) ;
+    transform: scale(1.2) ;
 }
 header{
     background: linear-gradient(135eg, var(--dark), var(--primary));
