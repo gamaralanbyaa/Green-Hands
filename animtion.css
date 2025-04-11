@@ -1,0 +1,116 @@
+@keyframes slideDown {
+    From { transform: translateY(-100%); }
+    To { transform: translateY(0); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+@keyframes fadeIn {
+    From { opacity: 0; }
+    To { opacity: 1; }
+}
+@keyframes slideInUp {
+    From {
+        Transform: translateY(50px);
+        Opacity: 0;
+    }
+    To {
+        Transform: translateY(0);
+        Opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    To {
+        Opacity: 1;
+        Transform: translateY(0);
+    }
+}
+@keyframes fadeInLeft {
+    From {
+        Transform: translateX(-20px);
+        Opacity: 0;
+    }
+    To {
+        Transform: translateX(0);
+        Opacity: 1;
+    }
+}
+@keyframes fadeInRight {
+    From {
+        Transform: translateX(20px);
+        Opacity: 0;
+    }
+    To {
+        Transform: translateX(0);
+        Opacity: 1;
+    }
+}
+@keyframes float {
+    0%, 
+   100% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+}
+Header {
+    Animation: slideDown 0.5s ease-out;
+}
+.logo {
+    Animation: pulse 2s infinite;
+}
+.hero {
+    Animation: fadeIn 1s ease-in;
+}
+.hero h1 {
+    Animation: slideInUp 1s ease-out;
+}
+.hero p {
+    Animation: slideInUp 1s ease-out 0.2s;
+    Animation-fill-mode: both;
+}
+.btn {
+    Animation: slideInUp 1s ease-out 0.4s;
+    Animation-fill-mode: both;
+}
+.card {	
+    Opacity: 0;
+    Transform: translateY(20px);
+    Animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.stat-item {
+    Opacity: 0;
+    Animation: fadeIn 0.5s ease-out forwards;
+}
+.stat-item:nth-child(1) { animation-delay: 0.2s; }
+.stat-item:nth-child(2) { animation-delay: 0.4s; }
+.stat-item:nth-child(3) { animation-delay: 0.6s; }
+.stat-item:nth-child(4) { animation-delay: 0.8s; }
+.team-member {
+    Opacity: 0;
+    Animation: fadeIn 0.5s ease-out forwards;
+}
+.team-member:nth-child(1) { animation-delay: 0.2s; }
+.team-member:nth-child(2) { animation-delay: 0.4s; }
+.team-member:nth-child(3) { animation-delay: 0.6s; }
+.team-member:nth-child(4) { animation-delay: 0.8s; }
+.contact-info {
+    Opacity: 0;
+    Animation: fadeInLeft 0.5s ease-out forwards;
+}
+.animate-on-scroll {
+    Opacity: 0;
+    Transform: translateY(20px);
+    Transition: all 0.6s ease;
+}
+.animate-on-scroll.animated {
+    Opacity: 1;
+    Transform: translateY(0);
+}
